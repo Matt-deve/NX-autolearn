@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Noughts and Crosses</title>
+    <link rel="stylesheet" href="NX2style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Play Noughts and Crosses!</h1>
+    </div>
+    <div class="main">
+        <div class="sidebar">
+            <div class="settingGroup">
+                <h3>Play versus</h3>
+                <label><input onclick="changeSettings()" type="radio" name="versus" value="Computer" checked>Computer</label>
+                <label><input onclick="changeSettings()" type="radio" name="versus" value="Player">Local player</label>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="vCPU settingGroup">
+                <h3>Choose counter</h3>
+                <label><input type="radio" name="counter" value="O" checked>O</label>
+                <label><input type="radio" name="counter" value="X">X</label>
+            </div>
+            <div class="vCPU settingGroup">
+                <h3>Select first to play</h3>
+                <label><input type="radio" name="first" value="Player" checked>Player</label>
+                <label><input type="radio" name="first" value="Computer">Computer</label>
+            </div>
+            <div class="vCPU settingGroup">
+                <h3>Select difficulty</h3>
+                <label><input type="radio" name="difficulty" value="Low" checked>Low</label>
+                <!--<label><input type="radio" name="difficulty" value="High">High</label>-->
+                <label><input type="radio" name="difficulty" value="Intelligent">Intelligent</label>
+            </div>
+            <div class="settingGroup">
+                <h3 class="startButton" onclick="startGame()">Start Game</h3>
+            </div>
+        </div>
+        <div id="gameWindow">
+        </div>
+    </div>
+    <div class="footer">
+        <button onclick="clearHistory()">Click here to clear game history.</button>
+        <p> &copy; 2021 M.Weightman</p>
+    </div>
+
+
+    <script src="NX2script.js"></script>
+</body>
+
+</html>
