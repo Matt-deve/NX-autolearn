@@ -1,2 +1,2 @@
 # NX-autolearn
-Noughts and crosses
+<a href="NX.html">Noughts and crosses</a>
