@@ -11,8 +11,13 @@ var drawHistory = [];
 function changeSettings() { //amend to add computer settings back in when clicking back on computer versus
     let v = document.getElementsByName("versus");
     v.forEach(function(element) { if (element.checked == true) { settings["versus"] == element.value } });
-    let vCPU = document.getElementsByClassName("vCPU");
-    for (i = 0; i < vCPU.length; i++) { vCPU[i].style.display = "none" };
+    if (settings["versus"] == "cpu") {
+        let vCPU = document.getElementsByClassName("vCPU");
+        for (i = 0; i < vCPU.length; i++) { vCPU[i].style.display = "none" };
+    } else {
+        let vCPU = document.getElementsByClassName("vCPU");
+        for (i = 0; i < vCPU.length; i++) { vCPU[i].style.display = "block" };
+    }
 }
 
 function startGame() {
