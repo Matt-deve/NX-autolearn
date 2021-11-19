@@ -1,0 +1,106 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+label {
+    padding: 5px;
+}
+
+label:hover {
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(65, 105, 225);
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+.main {
+    display: flex;
+}
+
+@media only screen and (max-width: 610px) {
+    .main {
+        display: block;
+        margin: auto;
+    }
+    .gameWindow {
+        margin: auto;
+    }
+}
+
+.sidebar {
+    max-width: 800px;
+    min-width: 300px;
+    align-content: center;
+    /*border: 1px solid black;*/
+}
+
+.settingGroup {
+    border: 1px solid black;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+.startButton {
+    width: fit-content;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+
+.startButton:hover {
+    transform: translate(-5px, -5px);
+    cursor: pointer;
+    outline: 1px solid rgba(65, 105, 225);
+    box-shadow: 8px 12px 5px rgb(65, 105, 225);
+}
+
+#gameWindow {
+    width: 300px;
+    height: 320px;
+    margin: 25px auto;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.row {
+    display: flex;
+}
+
+.square {
+    border: 1px solid black;
+    width: 98px;
+    height: 98px;
+    font-size: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: slategrey;
+}
+
+.square:hover {
+    cursor: pointer;
+}
+
+.squareFree:hover {
+    background-color: rgb(176, 196, 222);
+    outline: 2px solid rgb(65, 105, 225);
+    transition: background-color 0.4s;
+}
+
+.squareTaken {
+    background-color: cornflowerblue;
+}
+
+#statusBar {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.winRow {
+    color: white;
+    font-weight: bold;
+}
