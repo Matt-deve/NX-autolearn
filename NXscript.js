@@ -181,7 +181,7 @@ function cpuEasy(mark) {
     checkWin();
 }
 
-function cpuReg(mark) {}
+function cpuReg(turn, mark) {}
 
 function cpuImp(mark) {
 
